@@ -1,0 +1,116 @@
+.list-page {
+    padding: 42px;
+    max-width: 100%;
+    background-image: url("../../images/sonfav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.listitem {
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: aliceblue;
+    height: 700px;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 400px;
+}
+
+.list-page__title {
+    font-size: 34px;
+    margin-bottom: 26px;
+    color: red;
+    text-align: center;
+    font-weight: 600px;
+}
+
+.list-page ul li {
+    font-size: 14px;
+}
+
+.info {
+    padding: 10px;
+}
+
+.title {
+    color: #0f5e9c;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.add li {
+    margin-bottom: 10px;
+}
+
+.plot {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.position {
+    position: absolute;
+    bottom: 10px;
+}
+
+.position div {
+    margin-bottom: 10px;
+}
+
+.position button {
+    background: rgb(145, 92, 182);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    border: none;
+
+}
+
+.position button a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.position button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+
+/* mobile css */
+@media only screen and (max-width: 720px) {
+    .list-page {
+        padding: 42px calc(50% - 300px);
+    }
+    .list-page__title {
+        font-size: 34px;
+        margin-bottom: 26px;
+    }
+
+    .list-page ul li {
+        font-size: 18px;
+    }
+}

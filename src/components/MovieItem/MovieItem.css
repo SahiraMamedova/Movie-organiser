@@ -1,0 +1,105 @@
+.movie-item {
+    padding: 20px;
+    background-color: 	#bea9de;
+    display: flex;
+}
+
+.movie-item__poster {
+    height: 150px;
+    margin-right: 21px;
+    width: 120px;
+}
+
+.movie-item__title {
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+.movie-item__add-button {
+    border: none;
+    padding: 10px 15px;
+    color: #FFEEDB;
+    font-size: 14px;
+    transition: all 0.2s linear;
+    padding: 12px 40px;
+    text-decoration: none;
+    background: 
+      linear-gradient(90deg, 
+        #04f5ed, 
+        #5c27fe, 
+        #c165dd, 
+        #04f5ed);
+    background-size: 400%;
+    display: inline-block;
+    color: #fff;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    animation: glowing 8s linear infinite;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.movie-item__add-button ::after{
+    content: " ";
+    position: absolute;
+    border-radius: inherit;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    top: -6px;
+    background: inherit;
+    background-size: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    filter: blur(16px);
+    animation: glowing 7s linear infinite;
+    transform: translateZ(0);
+}
+
+.movie-item__add-button :hover ::after{
+    opacity: 1;
+}
+  
+@keyframes glowing {
+    100% {
+      background-position: -400%;
+    }
+  }
+
+.movie-item__add-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.2s linear;
+}
+
+/* mobile css */
+@media only screen and (max-width: 720px) {
+    .movie-item {
+        padding: 6vw;
+        
+    }
+    
+    .movie-item__poster {
+        height: 35%;
+        margin-right: 4vw;
+     width: 35%;    }
+    
+    .movie-item__title {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        width: 60%;
+    }
+    
+    .movie-item__add-button {
+        padding: 2.7vw 2vw;
+        font-size: 3vw;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    
+  
+}
