@@ -2,9 +2,12 @@
     padding: 42px calc(50% - 500px);
     display: flex;
     flex-direction: column;
-    background-image: url("../../images/son.jpg");
-    min-height: 100vh;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../images/son.jpg);
     background-position: center;
+    background-size: cover;
+    min-height: 100vh;
 }
 .main-page__main-section {
     display: flex;
@@ -18,7 +21,7 @@
 .search-and-aside {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .main-page__main-section {
     padding-left: 40px;

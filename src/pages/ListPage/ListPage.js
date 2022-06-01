@@ -1,20 +1,28 @@
 import React, { Component } from "react";
 import "./ListPage.css";
 import { connect } from "react-redux";
+import axios from "axios"
 import { getList } from "../../redux/actions";
 
 class ListPage extends Component {
   state = {
     Clicked: false,
+    title:""
   };
   componentDidMount() {
     const id = this.props.match.params;
     this.props.getList(id.id);
+    axios
+      .get(`https://acb-api.algoritmika.org/api/movies/list/${id.id}`)
+      .then((res) => res.data)
+      .then((data) => {
+        this.setState({ title: data.title });
+      });
   }
   render() {
     return (
       <div className="list-page">
-        <h1 className="list-page__title">Мой список</h1>
+        <h1 className="list-page__title">{this.state.title}</h1>
         <ul className="container">
           {this.props.movieDetails.map((item) => {
             return (

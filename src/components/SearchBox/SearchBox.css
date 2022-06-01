@@ -4,25 +4,25 @@
 
 .search-box__form-label {
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 10px;
-    color: white;   
+    color: white;
 }
 
 .search-box__form-input {
     box-sizing: border-box;
     display: block;
     margin-top: 5px;
-    width: 300px;
+    width: 320px;
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 10px;
     outline: none;
     border: 1px solid rgba(7, 57, 221, 0.5);
 }
 
 .search-box__form-submit {
     margin-top: 17px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     border: none;
     transition: all 0.2s linear;
     color: #FFEEDB;
@@ -47,7 +47,7 @@
 
     .search-box__form-label {
         display: inline-block;
-        font-size: 4vw;
+        font-size: 4.3vw;
         margin-right: 1vw;
         color: white;
     }
@@ -59,6 +59,7 @@
         width: 60vw;
         font-size: 5vw;
         padding: 1.5vw 2vw;
+        margin-top: 10px;
     }
     
     .search-box__form-submit {

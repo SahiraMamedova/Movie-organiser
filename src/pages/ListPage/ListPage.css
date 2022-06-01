@@ -1,10 +1,11 @@
 .list-page {
     padding: 42px;
     max-width: 100%;
-    background-image: url("../../images/sonfav.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../../images/sonfav.jpg);
     background-position: center;
+    background-size: cover;
     min-height: 100vh;
 }
 
@@ -39,6 +40,7 @@
     font-size: 34px;
     margin-bottom: 26px;
     color: red;
+    text-transform: uppercase;
     text-align: center;
     font-weight: 600px;
 }
